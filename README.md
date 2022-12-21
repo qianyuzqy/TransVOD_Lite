@@ -9,7 +9,7 @@
 
 This repository is an official implementation of the paper [TransVOD:End-to-End Video Object Detection with Spatial-Temporal Transformers](https://ieeexplore.ieee.org/document/9960850), espeically the code of TransVOD Lite.
 
-:bell: We are happy to announce that TransVOD was accepted at **IEEE TPAMI**. 
+:bell: We are happy to announce that TransVOD was accepted by **IEEE TPAMI**. 
 
 :bell: We are happy to announce that our method is the first work that achieves 90% mAP on ImageNet VID dataset.
 
@@ -114,19 +114,19 @@ We use Swin Transformer as the network backbone. We train our TransVOD with Swin
 1. Train SingleBaseline. You can download COCO pretrained weights from this [link](https://github.com/fundamentalvision/Deformable-DETR). 
    
 ```bash 
-GPUS_PER_NODE=8 ./tools/run_dist_launch.sh $1 r50 $2 configs/swinb_train_single.sh
+GPUS_PER_NODE=8 ./tools/run_dist_launch.sh $1 swinb $2 configs/swinb_train_single.sh
 ```  
-1. Train TransVOD. Using the model weights of SingleBaseline as the resume model.
+2. Train TransVOD. Using the model weights of SingleBaseline as the resume model.
 
 ```bash 
-GPUS_PER_NODE=8 ./tools/run_dist_launch.sh $1 r50 $2 configs/swinb_train_multi.sh
+GPUS_PER_NODE=8 ./tools/run_dist_launch.sh $1 swinb $2 configs/swinb_train_multi.sh
 ``` 
 
 
 #### Training on slurm cluster
 If you are using slurm cluster, you can simply run the following command to train on 1 node with 8 GPUs:
 ```bash
-GPUS_PER_NODE=8 ./tools/run_dist_slurm.sh <partition> r50 8 configs/swinb_train_multi.sh
+GPUS_PER_NODE=8 ./tools/run_dist_slurm.sh <partition> swinb 8 configs/swinb_train_multi.sh
 ```
 
 ### Evaluation
@@ -141,7 +141,7 @@ code_root/
 ```
 And then run following command to evaluate it on ImageNET VID validation set:
 ```bash 
-GPUS_PER_NODE=8 ./tools/run_dist_launch.sh $1 eval_r50 $2 configs/r50_eval_multi.sh
+GPUS_PER_NODE=8 ./tools/run_dist_launch.sh $1 eval_swinb $2 configs/swinb_eval_multi.sh
 ```
 
 ## Acknowledgements
