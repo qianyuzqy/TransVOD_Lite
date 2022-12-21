@@ -1,19 +1,49 @@
 # TransVOD_Lite
+**by [Qianyu Zhou](https://lhoyer.github.io/), [Xiangtai Li](https://vas.mpi-inf.mpg.de/dengxin/), [Lu He](https://scholar.google.de/citations?user=TwMib_QAAAAJ&hl=en)**, 
+
+**[[Arxiv]](https://arxiv.org/pdf/2201.05047.pdf)**
+**[[Paper]](https://ieeexplore.ieee.org/document/9960850)**
+
+
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/transvod-end-to-end-video-object-detection/video-object-detection-on-imagenet-vid)](https://paperswithcode.com/sota/video-object-detection-on-imagenet-vid?p=transvod-end-to-end-video-object-detection)
 
 This repository is an official implementation of the paper TransVOD:End-to-End Video Object Detection with Spatial-Temporal Transformers(https://ieeexplore.ieee.org/document/9960850), espeically the code of TransVOD Lite.
+
+:bell: We are happy to announce that TransVOD was accepted at **TPAMI**. :bell:
+
+:bell: We are happy to announce that our method is the first work that achieves 90% mAP on ImageNet VID dataset.. :bell:
+
 
 ## Updates
 - (December 2022) Code and pretrained weights of TransVOD Lite released. 
 - (October 2022) Our paper is accepted by IEEE Transactions on Pattern Analysis and Machine Intelligence (IEEE TPAMI)
 
+## Citing TransVOD
+If you find TransVOD useful in your research, please consider citing:
+```bibtex
+@article{zhou2022transvod,
+ author={Zhou, Qianyu and Li, Xiangtai and He, Lu and Yang, Yibo and Cheng, Guangliang and Tong, Yunhai and Ma, Lizhuang and Tao, Dacheng},  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},   
+ title={TransVOD: End-to-End Video Object Detection With Spatial-Temporal Transformers},   
+ year={2022},   
+ pages={1-16},  
+ doi={10.1109/TPAMI.2022.3223955}}
+
+
+@inproceedings{he2021end,
+  title={End-to-End Video Object Detection with Spatial-Temporal Transformers},
+  author={He, Lu and Zhou, Qianyu and Li, Xiangtai and Niu, Li and Cheng, Guangliang and Li, Xiao and Liu, Wenxuan and Tong, Yunhai and Ma, Lizhuang and Zhang, Liqing},
+  booktitle={Proceedings of the 29th ACM International Conference on Multimedia},
+  pages={1507--1516},
+  year={2021}
+}
+
+
 ## Main Results
+Speed and Accuracy trade-off of video object detection (VOD) results in ImageNet VID dataset. The blue points plot the state-of-the-art (SOTA) VOD methods, and the red ones are our proposed method TransVOD Lite, achieving the best tradeoff between the speed and accuracy with different backbones. SwinB, SwinS and SwinT mean Swin Base, Small and Tiny.
 
-| **Method** | **Backbone** | **FPS** | **Params** | **AP50**  |                                           **URL**                                           |
-| :--------: | :---------: | :------------: | :------------: | :------: | :-----------------------------------------------------------------------------------------: |
+![Speed and Accuracy trade-off](fig/fps.png)
+![Comparison Results](fig/sota.png)
 
-|    TransVOD   | Swin-Tiny |   29.6  |   46.9  |   79.9   |[model](https://drive.google.com/drive/folders/1FTRz-O1_-IL_la-2jQzDiZgvI_NLRPme?usp=sharing) |
-   TransVOD   | Swin-Small  |  22.2  |   68.3 |   81.9   |[model](https://drive.google.com/drive/folders/1FTRz-O1_-IL_la-2jQzDiZgvI_NLRPme?usp=sharing) |    TransVOD   | Swin-Base |   14.9  |   106.3|   90.1   |[model](https://drive.google.com/drive/folders/1FTRz-O1_-IL_la-2jQzDiZgvI_NLRPme?usp=sharing) |
 
 
 *Note:*
@@ -114,26 +144,21 @@ And then run following command to evaluate it on ImageNET VID validation set:
 GPUS_PER_NODE=8 ./tools/run_dist_launch.sh $1 eval_r50 $2 configs/r50_eval_multi.sh
 ```
 
+## Acknowledgements
+
+This project is based on the following open-source projects. We thank their
+authors for making the source code publically available.
+
+* [Deformable DETR](https://github.com/fundamentalvision/Deformable-DETR)
 
 
-## Citing TransVOD
-If you find TransVOD useful in your research, please consider citing:
-```bibtex
-@article{zhou2022transvod,
- author={Zhou, Qianyu and Li, Xiangtai and He, Lu and Yang, Yibo and Cheng, Guangliang and Tong, Yunhai and Ma, Lizhuang and Tao, Dacheng},  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},   
- title={TransVOD: End-to-End Video Object Detection With Spatial-Temporal Transformers},   
- year={2022},  
- volume={},  
- number={},  
- pages={1-16},  
- doi={10.1109/TPAMI.2022.3223955}}
+## License
+
+This project is released under the [Apache License 2.0](LICENSE), while some 
+specific features in this repository are with other licenses. Please refer to 
+[LICENSES.md](LICENSES.md) for the careful check, if you are using our code for 
+commercial matters.
 
 
-@inproceedings{he2021end,
-  title={End-to-End Video Object Detection with Spatial-Temporal Transformers},
-  author={He, Lu and Zhou, Qianyu and Li, Xiangtai and Niu, Li and Cheng, Guangliang and Li, Xiao and Liu, Wenxuan and Tong, Yunhai and Ma, Lizhuang and Zhang, Liqing},
-  booktitle={Proceedings of the 29th ACM International Conference on Multimedia},
-  pages={1507--1516},
-  year={2021}
-}
+
 
