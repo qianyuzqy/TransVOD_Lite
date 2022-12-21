@@ -13,7 +13,7 @@ This repository is an official implementation of the paper TransVOD:End-to-End V
 | :--------: | :---------: | :------------: | :------------: | :------: | :-----------------------------------------------------------------------------------------: |
 
 |    TransVOD   | Swin-Tiny |   29.6  |   46.9  |   79.9   |[model](https://drive.google.com/drive/folders/1FTRz-O1_-IL_la-2jQzDiZgvI_NLRPme?usp=sharing) |
-|    TransVOD   | Swin-Small  |  22.2  |   68.3 |   81.9   |[model](https://drive.google.com/drive/folders/1FTRz-O1_-IL_la-2jQzDiZgvI_NLRPme?usp=sharing) |    TransVOD   | Swin-Base |   14.9  |   106.3|   90.1   |[model](https://drive.google.com/drive/folders/1FTRz-O1_-IL_la-2jQzDiZgvI_NLRPme?usp=sharing) |
+   TransVOD   | Swin-Small  |  22.2  |   68.3 |   81.9   |[model](https://drive.google.com/drive/folders/1FTRz-O1_-IL_la-2jQzDiZgvI_NLRPme?usp=sharing) |    TransVOD   | Swin-Base |   14.9  |   106.3|   90.1   |[model](https://drive.google.com/drive/folders/1FTRz-O1_-IL_la-2jQzDiZgvI_NLRPme?usp=sharing) |
 
 
 *Note:*
