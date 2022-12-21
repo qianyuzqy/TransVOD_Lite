@@ -7,7 +7,7 @@
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/transvod-end-to-end-video-object-detection/video-object-detection-on-imagenet-vid)](https://paperswithcode.com/sota/video-object-detection-on-imagenet-vid?p=transvod-end-to-end-video-object-detection)
 
-This repository is an official implementation of the paper [TransVOD:End-to-End Video Object Detection with Spatial-Temporal Transformers](https://ieeexplore.ieee.org/document/9960850), espeically the code of TransVOD Lite.
+(TPAMI 2022) [TransVOD:End-to-End Video Object Detection with Spatial-Temporal Transformers](https://ieeexplore.ieee.org/document/9960850).
 
 :bell: We are happy to announce that TransVOD was accepted by **IEEE TPAMI**. 
 
