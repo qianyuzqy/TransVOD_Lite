@@ -9,14 +9,13 @@
 
 This repository is an official implementation of the paper TransVOD:End-to-End Video Object Detection with Spatial-Temporal Transformers(https://ieeexplore.ieee.org/document/9960850), espeically the code of TransVOD Lite.
 
-:bell: We are happy to announce that TransVOD was accepted at **TPAMI**. :bell:
+:bell: We are happy to announce that TransVOD was accepted at **IEEE TPAMI**. 
 
 :bell: We are happy to announce that our method is the first work that achieves 90% mAP on ImageNet VID dataset.. :bell:
 
 
 ## Updates
 - (December 2022) Code and pretrained weights of TransVOD Lite released. 
-- (October 2022) Our paper is accepted by IEEE Transactions on Pattern Analysis and Machine Intelligence (IEEE TPAMI)
 
 ## Citing TransVOD
 If you find TransVOD useful in your research, please consider citing:
@@ -36,6 +35,7 @@ If you find TransVOD useful in your research, please consider citing:
   pages={1507--1516},
   year={2021}
 }
+```
 
 
 ## Main Results
