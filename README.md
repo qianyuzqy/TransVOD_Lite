@@ -1,10 +1,20 @@
 # TransVOD_Lite
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/transvod-end-to-end-video-object-detection/video-object-detection-on-imagenet-vid)](https://paperswithcode.com/sota/video-object-detection-on-imagenet-vid?p=transvod-end-to-end-video-object-detection)
 
-This repository is an official implementation of the paper TransVOD:End-to-End Video Object Detection with Spatial-Temporal Transformers.
+This repository is an official implementation of the paper TransVOD:End-to-End Video Object Detection with Spatial-Temporal Transformers(https://ieeexplore.ieee.org/document/9960850), espeically the code of TransVOD Lite.
 
 ## Updates
-- (December 2022) Code and pretrained weights for TransVOD Lite released. 
+- (December 2022) Code and pretrained weights of TransVOD Lite released. 
+- (October 2022) Our paper is accepted by IEEE Transactions on Pattern Analysis and Machine Intelligence (IEEE TPAMI)
+
+## Main Results
+
+| **Method** | **Backbone** | **FPS** | **Params** | **AP50**  |                                           **URL**                                           |
+| :--------: | :---------: | :------------: | :------: | :-----------------------------------------------------------------------------------------: |
+
+|    TransVOD   | Swin-Tiny |   29.6  |   46.9  |   79.9   |[model](https://drive.google.com/drive/folders/1FTRz-O1_-IL_la-2jQzDiZgvI_NLRPme?usp=sharing) |
+|    TransVOD   | Swin-Small  |  22.2  |   68.3 |   81.9   |[model](https://drive.google.com/drive/folders/1FTRz-O1_-IL_la-2jQzDiZgvI_NLRPme?usp=sharing) |    TransVOD   | Swin-Base |   14.9  |   106.3|   90.1   |[model](https://drive.google.com/drive/folders/1FTRz-O1_-IL_la-2jQzDiZgvI_NLRPme?usp=sharing) |
+
 
 *Note:*
 1. All models of TransVOD are trained  with pre-trained weights on COCO dataset.
@@ -12,7 +22,7 @@ This repository is an official implementation of the paper TransVOD:End-to-End V
 
 ## Installation
 
-The codebase is built on top of [Deformable DETR](https://github.com/fundamentalvision/Deformable-DETR).
+The codebase is built on top of [Deformable DETR](https://github.com/fundamentalvision/Deformable-DETR) and [TransVOD](https://github.com/SJTU-LuHe/TransVOD).
 
 ### Requirements
 
@@ -71,7 +81,7 @@ code_root/
 We use Swin Transformer as the network backbone. We train our TransVOD with Swin-base as backbone as following:
 
 #### Training on single node
-1. Train SingleBaseline. You can download COCO pretrained weights from this link(https://github.com/fundamentalvision/Deformable-DETR). 
+1. Train SingleBaseline. You can download COCO pretrained weights from this [link](https://github.com/fundamentalvision/Deformable-DETR). 
    
 ```bash 
 GPUS_PER_NODE=8 ./tools/run_dist_launch.sh $1 r50 $2 configs/swinb_train_single.sh
