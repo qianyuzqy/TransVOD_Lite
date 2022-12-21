@@ -1,5 +1,5 @@
 # TransVOD_Lite
-**by [Qianyu Zhou](https://lhoyer.github.io/), [Xiangtai Li](https://vas.mpi-inf.mpg.de/dengxin/), [Lu He](https://scholar.google.de/citations?user=TwMib_QAAAAJ&hl=en)**, 
+**by [Qianyu Zhou](https://qianyuzqy.github.io/), [Xiangtai Li](https://lxtgh.github.io/), [Lu He](https://github.com/SJTU-LuHe)**, [Yibo Yang](), [Guangliang Cheng](), [Yunhai Tong](), [Lizhuang Ma](https://dmcv.sjtu.edu.cn/people/), [Dacheng Tao]()
 
 **[[Arxiv]](https://arxiv.org/pdf/2201.05047.pdf)**
 **[[Paper]](https://ieeexplore.ieee.org/document/9960850)**
@@ -7,15 +7,16 @@
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/transvod-end-to-end-video-object-detection/video-object-detection-on-imagenet-vid)](https://paperswithcode.com/sota/video-object-detection-on-imagenet-vid?p=transvod-end-to-end-video-object-detection)
 
-This repository is an official implementation of the paper TransVOD:End-to-End Video Object Detection with Spatial-Temporal Transformers(https://ieeexplore.ieee.org/document/9960850), espeically the code of TransVOD Lite.
+This repository is an official implementation of the paper [TransVOD:End-to-End Video Object Detection with Spatial-Temporal Transformers](https://ieeexplore.ieee.org/document/9960850), espeically the code of TransVOD Lite.
 
 :bell: We are happy to announce that TransVOD was accepted at **IEEE TPAMI**. 
 
-:bell: We are happy to announce that our method is the first work that achieves 90% mAP on ImageNet VID dataset.. :bell:
+:bell: We are happy to announce that our method is the first work that achieves 90% mAP on ImageNet VID dataset.
 
 
 ## Updates
-- (December 2022) Code and pretrained weights of TransVOD Lite released. 
+- (December 2022) Checkpoints of pretrained models will be released later. 
+- (December 2022) Code of TransVOD Lite released. 
 
 ## Citing TransVOD
 If you find TransVOD useful in your research, please consider citing:
@@ -39,9 +40,8 @@ If you find TransVOD useful in your research, please consider citing:
 
 
 ## Main Results
-Speed and Accuracy trade-off of video object detection (VOD) results in ImageNet VID dataset. The blue points plot the state-of-the-art (SOTA) VOD methods, and the red ones are our proposed method TransVOD Lite, achieving the best tradeoff between the speed and accuracy with different backbones. SwinB, SwinS and SwinT mean Swin Base, Small and Tiny.
+Our proposed method TransVOD Lite, achieving the best tradeoff between the speed and accuracy with different backbones. SwinB, SwinS and SwinT mean Swin Base, Small and Tiny.
 
-![Speed and Accuracy trade-off](fig/fps.png)
 ![Comparison Results](fig/sota.png)
 
 
