@@ -118,12 +118,12 @@ code_root/
 We use Swin Transformer as the network backbone. We train our TransVOD with Swin-base as backbone as following:
 
 #### Training on single node
-1. Train SingleBaseline. You can download COCO pretrained weights from this [DownLoad Link](https://pan.baidu.com/s/1WAXRgXODX1tZ5PNkNOGDaA) (password:26xc). 
+1. Train SingleFrameBaseline. You can download COCO pretrained weights from this [DownLoad Link](https://pan.baidu.com/s/1WAXRgXODX1tZ5PNkNOGDaA) (password:26xc). 
    
 ```bash 
 GPUS_PER_NODE=8 ./tools/run_dist_launch.sh $1 swinb $2 configs/swinb_train_single.sh
 ```  
-2. Train TransVOD. Using the model weights of SingleBaseline as the resume model.
+2. Train TransVOD Lite. Using the model weights of SingleBaseline as the resume model.
 
 ```bash 
 GPUS_PER_NODE=8 ./tools/run_dist_launch.sh $1 swinb $2 configs/swinb_train_multi.sh
