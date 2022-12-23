@@ -15,8 +15,8 @@
 
 
 ## Updates
-- (December 2022) Checkpoints of pretrained models will be released later. 
-- (December 2022) Code of TransVOD Lite released. 
+- (December 2022) Checkpoints of pretrained models are released. 
+- (December 2022) Code of TransVOD Lite are released. 
 
 ## Citing TransVOD
 If you find TransVOD useful in your research, please consider citing:
