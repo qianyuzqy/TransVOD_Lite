@@ -89,6 +89,13 @@ The codebase is built on top of [Deformable DETR](https://github.com/fundamental
 
 ## Usage
 
+### Checkpoints
+
+Below, we provide checkpoints, training logs and inference logs of TransVOD Lite for different backbones.
+
+[DownLoad Link](https://pan.baidu.com/s/1WAXRgXODX1tZ5PNkNOGDaA) (password:26xc)
+
+
 ### Dataset preparation
 
 1. Please download ILSVRC2015 DET and ILSVRC2015 VID dataset from [here](https://image-net.org/challenges/LSVRC/2015/2015-downloads). Then we covert jsons of two datasets by using the [code](https://github.com/open-mmlab/mmtracking/blob/master/tools/convert_datasets/ilsvrc/). The joint [json](https://drive.google.com/drive/folders/1cCXY41IFsLT-P06xlPAGptG7sc-zmGKF?usp=sharing)  of two datasets is provided. The  After that, we recommend to symlink the path to the datasets to datasets/. And the path structure should be as follows:
@@ -111,7 +118,7 @@ code_root/
 We use Swin Transformer as the network backbone. We train our TransVOD with Swin-base as backbone as following:
 
 #### Training on single node
-1. Train SingleBaseline. You can download COCO pretrained weights from this [link](https://github.com/fundamentalvision/Deformable-DETR). 
+1. Train SingleBaseline. You can download COCO pretrained weights from this [DownLoad Link](https://pan.baidu.com/s/1WAXRgXODX1tZ5PNkNOGDaA) (password:26xc). 
    
 ```bash 
 GPUS_PER_NODE=8 ./tools/run_dist_launch.sh $1 swinb $2 configs/swinb_train_single.sh
@@ -130,7 +137,7 @@ GPUS_PER_NODE=8 ./tools/run_dist_slurm.sh <partition> swinb 8 configs/swinb_trai
 ```
 
 ### Evaluation
-You can get the config file and pretrained model of TransVOD (the link is in "Main Results" session), then put the pretrained_model into correponding folder.
+You can get the config file and pretrained model of TransVOD (the link is in "Checkpoint" session), then put the pretrained_model into correponding folder.
 ```
 code_root/
 └── exps/
