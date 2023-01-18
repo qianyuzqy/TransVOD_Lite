@@ -93,7 +93,8 @@ The codebase is built on top of [Deformable DETR](https://github.com/fundamental
 
 Below, we provide checkpoints, training logs and inference logs of TransVOD Lite for different backbones.
 
-[DownLoad Link](https://pan.baidu.com/s/1WAXRgXODX1tZ5PNkNOGDaA) (password:26xc)
+[DownLoad Link of Google Drive](https://drive.google.com/drive/folders/1eqpiVLAWA_oPYiGmP6CW03WJlXVDjy6e?usp=share_link)
+[DownLoad Link of Baidu Netdisk](https://pan.baidu.com/s/1WAXRgXODX1tZ5PNkNOGDaA) (password:26xc)
 
 
 ### Dataset preparation
