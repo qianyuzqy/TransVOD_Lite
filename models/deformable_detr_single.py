@@ -132,7 +132,7 @@ class DeformableDETR(nn.Module):
                - "aux_outputs": Optional, only returned when auxilary losses are activated. It is a list of
                                 dictionnaries containing the two above keys for each decoder layer.
         """
-        if not isinstance(samples, NestedTensor):
+        if type(samples) == NestedTensor:
             samples = nested_tensor_from_tensor_list(samples)
         features, pos = self.backbone(samples)
         # print('features[-1].tensors.shape', features[-1].tensors.shape)
